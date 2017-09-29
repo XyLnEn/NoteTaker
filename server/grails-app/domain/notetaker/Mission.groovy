@@ -10,6 +10,7 @@ class Mission {
     //Date à laquelle la mission a été proposée
     Date dateProp = new Date()
     static belongsTo = [personne : Personne]
+    static hasMany = [technos : Technos]
     static constraints = {
 
         dateDeb nullable:true
