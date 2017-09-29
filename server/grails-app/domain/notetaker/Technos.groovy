@@ -7,5 +7,6 @@ class Technos {
     int maitrise
     static constraints = {
         maitrise size: 0..5
+        nom unique:true
     }
 }
