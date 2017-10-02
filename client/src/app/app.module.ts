@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { IndexComponent } from './index/index.component';
+import { NoteComponent } from './note/note.component';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { NavService } from './nav/nav.service';
@@ -14,6 +15,7 @@ import { AppRoutingModule } from "./app-routing.module";
   declarations: [
     AppComponent,
     NavComponent,
+    NoteComponent,
     IndexComponent
   ],
   imports: [
