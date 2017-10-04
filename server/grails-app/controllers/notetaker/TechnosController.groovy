@@ -9,7 +9,8 @@ class TechnosController {
     def technosService
 
     def save = {
-        technosService.creerClient(params['nom'],params['lieu'])
+
+        technosService.creerTechnos(request.JSON.nom,request.JSON.maitrise)
     }
 
     def show = {

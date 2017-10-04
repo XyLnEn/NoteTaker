@@ -8,7 +8,7 @@ class PersonneController {
 	static responseFormats = ['json', 'xml']
     def personneService
     def save = {
-        personneService.creerPersonne(params['nom'],params['prenom'],params['fonction'])
+        personneService.creerPersonne(request.JSON.nom,request.JSON.prenom,request.JSON.fonction)
     }
 
     def show = {

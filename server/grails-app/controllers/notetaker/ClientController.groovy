@@ -10,7 +10,7 @@ class ClientController {
 
 
     def save = {
-        clientService.creerClient(params['nom'],params['lieu'])
+        clientService.creerClient(request.JSON.nom,request.JSON.lieu)
     }
 
     def show = {
