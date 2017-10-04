@@ -1,0 +1,10 @@
+<section class="missions">
+  <article *ngFor="let mission of missions">
+    <span>{{mission.client}}</span>
+    <ul *ngFor="let technos of mission.technos">
+      <li>
+        {{technos}}
+      </li>
+    </ul>
+  </article>
+</section>

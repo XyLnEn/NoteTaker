@@ -1,0 +1,18 @@
+<section class="matching">
+  <form [formGroup]="addForm" #f="ngForm" (ngSubmit)="onSubmit(f)">
+  <div formArrayName="technologies">
+    <button type="button" (click)="addLink()" > ajouter une techno </button>
+    <div *ngFor="let address of addForm.controls.technologies.controls; let i=index">
+      <div>
+        <span>technologie no{{i + 1}}</span>
+        <span *ngIf="addForm.controls.technologies.controls.length > 1"><a (click)="removeLink(i)">REMOVE</a></span>
+      </div>
+      <!-- Angular assigns array index as group name by default 0, 1, 2, ... -->
+      <div [formGroupName]="i">
+        <input type="text" ngModel placeholder="technologie" formControlName="linkAddress">
+      </div>
+    </div>
+  </div>
+  <button>valider</button>
+</form>
+</section>
