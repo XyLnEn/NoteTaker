@@ -13,7 +13,7 @@ class MissionController {
 
 
     def save = {
-        missionService.creerMission(params['intitule'],params['lieu'],params['personne'])
+        missionService.creerMission(request.JSON.intitule,request.JSON.lieu,request.JSON.personne)
     }
 
     def show = {

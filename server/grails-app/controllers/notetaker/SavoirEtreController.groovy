@@ -9,7 +9,7 @@ class SavoirEtreController {
     def savoirEtreService
 
     def save = {
-        savoirEtreService.creerClient(params['nom'],params['lieu'])
+        savoirEtreService.creerClient(request.JSON.nom,request.JSON.lieu)
     }
 
     def show = {
