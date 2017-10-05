@@ -1,0 +1,8 @@
+import pootis.SavoirEtre
+
+model {
+	Iterable<SavoirEtre> savoirEtreList
+}
+
+json tmpl.savoirEtre(savoirEtreList ?: [])
+

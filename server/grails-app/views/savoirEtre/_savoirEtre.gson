@@ -1,0 +1,7 @@
+import pootis.SavoirEtre
+
+model {
+	SavoirEtre savoirEtre
+}
+
+json g.render(savoirEtre, [resolveTemplate: false])

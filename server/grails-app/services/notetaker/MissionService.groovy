@@ -19,7 +19,8 @@ class MissionService {
     }
 
     def rechercherMissions(){
-        return Mission.findAll()
+      def result = Mission.findAll();
+      return result;
     }
     //Recherche des missions en fonction des différentes technos passées en paramètres
     def rechercherMissionParTechnos(listTechnos) {

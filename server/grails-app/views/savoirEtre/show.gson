@@ -1,0 +1,7 @@
+import pootis.SavoirEtre
+
+model {
+	SavoirEtre savoirEtre
+}
+
+json tmpl.savoirEtre(savoirEtre)

@@ -1,0 +1,8 @@
+import pootis.Mission
+
+model {
+	Iterable<Mission> missionList
+}
+
+json tmpl.mission(missionList ?: [])
+

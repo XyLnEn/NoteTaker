@@ -1,0 +1,8 @@
+import pootis.Personne
+
+model {
+	Iterable<Personne> personneList
+}
+
+json tmpl.personne(personneList ?: [])
+

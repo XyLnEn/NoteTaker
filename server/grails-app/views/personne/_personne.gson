@@ -1,0 +1,7 @@
+import pootis.Personne
+
+model {
+	Personne personne
+}
+
+json g.render(personne, [resolveTemplate: false])

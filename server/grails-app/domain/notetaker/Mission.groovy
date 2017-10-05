@@ -9,8 +9,12 @@ class Mission {
     Date dateDeb
     //Date à laquelle la mission a été proposée
     Date dateProp = new Date()
+    //Une mission appartiens a une personne
     static belongsTo = [personne : Personne]
+    static mapping = [personne lazy: false]
+    //une mission est composé de plusieurs
     static hasMany = [technos : Technos]
+    static mapping2 = [technos lazy: false]
     static constraints = {
 
         dateDeb nullable:true

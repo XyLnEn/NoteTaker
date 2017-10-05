@@ -1,0 +1,7 @@
+import pootis.Technos
+
+model {
+	Technos technos
+}
+
+json tmpl.technos(technos)

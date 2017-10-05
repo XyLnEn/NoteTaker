@@ -1,0 +1,7 @@
+import pootis.Technos
+
+model {
+	Technos technos
+}
+
+json g.render(technos, [resolveTemplate: false])

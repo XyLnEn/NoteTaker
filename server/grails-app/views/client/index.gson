@@ -1,0 +1,8 @@
+import pootis.Client
+
+model {
+	Iterable<Client> clientList
+}
+
+json tmpl.client(clientList ?: [])
+

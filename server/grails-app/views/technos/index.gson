@@ -1,0 +1,8 @@
+import pootis.Technos
+
+model {
+	Iterable<Technos> technosList
+}
+
+json tmpl.technos(technosList ?: [])
+

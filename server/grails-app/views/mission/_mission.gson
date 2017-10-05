@@ -1,0 +1,7 @@
+import pootis.Mission
+
+model {
+	Mission mission
+}
+
+json g.render(mission, [resolveTemplate: false])

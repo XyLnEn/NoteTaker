@@ -26,8 +26,9 @@ class MissionController {
     }
 
     def index() {
-
-        render missionService.rechercherMissions() as JSON
+      //configuration qui fair remonter tout les sous-objets de l'objet a remonter en même temps
+      JSON.use('deep')
+      render missionService.rechercherMissions() as JSON
     }
 
     def missionParTechnos (listTechnos){
