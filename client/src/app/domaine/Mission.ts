@@ -6,6 +6,6 @@ export class Mission {
   personne: Personne;
   intitule: string;
   technos: Technos[];
-  dateDeb: Date;
+  dateDeb?: Date;
   lieu: string;
 }

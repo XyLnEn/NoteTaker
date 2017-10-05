@@ -1,9 +1,10 @@
 <section class="missions">
   <article *ngFor="let mission of missions">
-    <span>{{mission.intitule}}</span>
+    <span>Intitule: </span><span>{{mission.intitule}}</span>
     <ul *ngFor="let technos of mission.technos">
       <li>
-        {{technos}}
+        <span>Nom</span> : {{technos.nom}} <br>
+        <span>Maitrise</span> : {{technos.maitrise}}
       </li>
     </ul>
   </article>

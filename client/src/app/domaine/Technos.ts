@@ -1,5 +1,9 @@
 export class Technos {
-    id: string;
+
     nom: string;
-    maitrise: string;
+    maitrise: number;
+    constructor(_nom: string, _maitrise: number){
+        this.nom = _nom;
+        this.maitrise = _maitrise;
+    }
 }

@@ -34,7 +34,6 @@ export class BrowseComponent implements OnInit {
         .then(technos => {
           this.technos = technos;
         }, error => console.error('erreur lors de la recuperation des technos') );
-        
   }
 
 }
