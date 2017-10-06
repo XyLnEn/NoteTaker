@@ -5,8 +5,9 @@ class Technos {
     String nom
     //Niveau de maitrise de la techno (de 1 à 5)
     int maitrise
+
     static constraints = {
-        maitrise size: 0..5
+        maitrise max:5,min:0
         nom unique:true
     }
 }
